@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct Custom_Numeric_KeypadApp: App {
+    @State private var viewModel = ViewModel()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(viewModel)
         }
     }
 }
